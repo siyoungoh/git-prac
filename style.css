@@ -1,0 +1,487 @@
+body{
+    margin: 0 auto;
+}
+/*///////////////////////////////////////////// 헤더 //////////////////////////////////////////////////*/
+
+#header
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: white;
+    border-bottom:1px solid lightgray;
+}
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#header #header-mid{
+    width: 40%;
+    margin: 1% 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#header #header-mid input {
+    width: 40%;
+    border:1px solid lightgray;
+    border-radius: 3%;
+    height: 45px;
+    box-sizing: border-box;
+    padding-left: 25px;
+    background-image: url('insta-logo/search@3x.png');
+    background-position: 5px center;
+    background-size: 19px;
+    background-repeat: no-repeat;
+}
+
+#header #right-icon-wrap
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#header #right-icon-wrap .head_icon{
+    width: 8%;
+    height: 8%;
+}
+#header .mobile_icons .head_icon2
+{
+    display: none;
+}
+#header .mobile_icons .logo
+{
+    width: 20%;
+    padding-left: 18%;
+}
+/*//////////////////////////////왼쪽라인 /////////////////////////////////////////////////////*/
+#body-lefttwrap
+{
+    width:60%;
+}
+#Post-container {
+    padding-top: 12%;
+    padding-bottom: 12%;
+    padding-left: 15%;
+}
+
+/*스토리라인*/
+#story-container #story-box{
+    padding-left: 1%;
+    margin-bottom: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+
+.story_wrapper{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 3%;
+}
+.story_wrapper .story{
+    max-width: 60px;
+    max-height: 60px;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin-top: 10%;
+}
+.story_wrapper img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+#story-box .story_wrapper p {
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-size: 5%;
+}
+#story-container .story p{
+    margin-top: 10%;
+    margin-bottom: 0%;
+    font-size: 12px;
+}
+/*포스트 헤더*/
+#post-box{
+    border:1px solid lightgray;
+}
+#body-lefttwrap .post-head{
+    margin: 2% 0 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+#body-lefttwrap .left_wrapper img{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 70%;
+    margin-right: 3%;
+}
+#body-lefttwrap .left_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 3%;
+    width: 100%;
+}
+
+#body-lefttwrap .right_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-right: 3%;
+}
+/* 포스터 픽쳐*/
+#posting-conatiner .post-picture img{
+    width: 100%;
+
+}
+#posting-conatiner .post-picture .post-icons-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#posting-conatiner .post-picture .post-icons-wrapper .left-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+#posting-conatiner .post-picture .post-icons-wrapper img{
+    width: 11%;
+    margin: 2% 3%;
+}
+#posting-conatiner .post-picture .post-icons-wrapper .right-wrapper{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+/*포스트 - 코멘트*/
+#posting-conatiner .post-bottom{
+    width: 100%;
+    max-width: 720px;
+
+}
+#posting-conatiner .post-bottom .like-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1%;
+}
+
+#posting-conatiner .post-bottom img{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    margin-right: 0.3%;
+}
+#posting-conatiner .post-bottom .comment-bottom{
+    font-size: 20px;
+    padding-left: 1%;
+}
+.post-bottom p {
+    margin-top: 2%;
+    padding-left: 1%;
+}
+/*//////////////////////////////오른쪽라인 /////////////////////////////////////////////////////*/
+#body-rightwrap{
+    width: 40%;
+    float: right;
+}
+
+#right-box{
+    margin: 20% 5% ;
+}
+#right-box #box-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 0;
+    padding-left: 3%;
+    font-size: 1.5vw;
+}
+#right-box #follow_list .follow_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 3%;
+}
+#right-box #follow_list .follow_text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2px;
+}
+#right-box #follow_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#right-box #follow_list img{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    margin-right: 0.3%;
+}
+#box-head .recommend
+{color:gray;
+}
+.profile_main_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+
+}
+.profile_main_box .follow_text h5{
+    margin-top:3%;
+    margin-bottom: 8%;
+}
+
+/* 풋 */
+    #footer{
+        background-color: white;
+        width: 100%;
+        max-width: 720px;
+        border-top:1px solid lightgray;
+        position: fixed;
+        bottom: 0;
+        display: none;
+    }
+    #footer #icon-wrapper{
+        margin: 4% 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+/*반응형 웹*/
+@media screen and (max-width: 720px) {
+    body{
+    max-width: 720px;
+    margin: 0 auto;
+}
+    /*///////////////////////////////////////////// 헤더 //////////////////////////////////////////////////*/
+
+    #header
+    {
+        width: 100%;
+        max-width: 720px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        background-color: white;
+        border-bottom:1px solid lightgray;
+    }
+    #header #header-mid input {
+        display: none;
+    }
+
+    #header #right-icon-wrap
+    {
+        display: none;
+    }
+    #header .head_icon
+    {
+        display: none;
+        width: 6%;
+        margin: 3% 5%;
+    }
+    #header .mobile_icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #header .mobile_icons .head_icon2
+    {
+        width: 5%;
+        margin: 3% 5%;
+    }
+    #header .logo
+    {
+        width: 30%;
+    }
+    /*//////////////////////////////Post-container/////////////////////////////////////////////////////*/
+
+    #Post-container{
+        padding-top: 12%;
+        padding-bottom: 12%;
+    }
+
+    /*스토리라인*/
+    #story-container{
+        padding-left: 1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        border-bottom: 1px solid lightgray;
+    }
+    .story_wrapper{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2% 3%;
+    }
+    .story_wrapper .story{
+        max-width: 80px;
+        max-height: 80px;
+        width: 12vw;
+        height: 12vw;
+        border-radius: 50%;
+        border: 2px solid gray;
+    }
+    .story_wrapper img
+    {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    #story-container .story p{
+        margin-top: 10%;
+        margin-bottom: 0%;
+        font-size: 12px;
+    }
+    #story-box{
+
+    }
+    /*포스트 헤더*/
+
+    .post-head{
+        margin: 2% 0 ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+    }
+    #posting-conatiner .left_wrapper img{
+        width: 5vw;
+        height: 5vw;
+        border-radius: 70%;
+        margin-right: 3%;
+    }
+    #posting-conatiner .left_wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 3%;
+        width: 100%;
+    }
+
+    #posting-conatiner .right_wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        margin-right: 3%;
+    }
+    /* 포스터 픽쳐*/
+    #posting-conatiner .post-picture img{
+        width: 100%;
+        max-width: 720px;
+    }
+    #posting-conatiner .post-picture .post-icons-wrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #posting-conatiner .post-picture .post-icons-wrapper .left-wrapper{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+    #posting-conatiner .post-picture .post-icons-wrapper img{
+        width: 11%;
+        margin: 2% 3%;
+    }
+    #posting-conatiner .post-picture .post-icons-wrapper .right-wrapper{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+    }
+    /*포스트 - 코멘트*/
+    #posting-conatiner .post-bottom{
+        width: 100%;
+        max-width: 720px;
+
+    }
+    #posting-conatiner .post-bottom .like-bottom{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 1%;
+    }
+
+    #posting-conatiner .post-bottom img{
+        width: 4vw;
+        height: 4vw;
+        border-radius: 50%;
+        margin-right: 0.3%;
+    }
+    #posting-conatiner .post-bottom .comment-bottom{
+        font-size: 20px;
+        padding-left: 1%;
+    }
+    .post-bottom p {
+        margin-top: 2%;
+        padding-left: 1%;
+    }
+    /* 풋 */
+    #footer{
+        background-color: white;
+        width: 100%;
+        max-width: 720px;
+        border-top:1px solid lightgray;
+        position: fixed;
+        bottom: 0;
+    }
+    #footer #icon-wrapper{
+        margin: 4% 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #footer #icon-wrapper img{
+        width: 6%;
+    }
+
+    #body-rightwrap{
+    display: none;
+}
+
+}
+
